@@ -1,0 +1,200 @@
+/*Center the body content*/
+body {	
+    padding: 0px;
+	margin: 0px;
+	text-align: center;
+    background:#F9F9F9;
+	font:normal 13px/18px Arial, Helvetica, sans-serif;
+
+}
+/*Disable image borders*/
+a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	}
+#header {
+	height: 150px;
+	width: 100%;
+	text-align: left;
+    background: url("bghead.gif") repeat-x scroll center bottom transparent;
+}	
+#header .top
+{
+    height:150px;
+    overflow:hidden;
+    text-align:left;
+    width:100%;
+}
+
+#header .logo
+{
+    float:left;
+    padding:10px 0 0 18px;
+}
+#header .right
+{
+    float:right;
+    overflow:hidden;
+    padding:29px 0 0;
+    width:200px;
+}
+#header .search
+{
+    overflow:hidden;
+    width:100%;
+    margin-top:-63px;
+}
+#container {
+	background-color: #FFFFFF;
+	text-align:left;
+	background: url("bghead.gif") repeat-x scroll center top #EAEAEA;
+}
+#menu {
+	height: 37px;
+	z-index:20;
+	text-align:right;
+    background-color: #4D4D4D;
+    clear:both;
+}
+
+#logo {
+	height:100px;
+	width: 394px;
+	background-image: url(../images/bg_logo.jpg);
+	background-repeat: no-repeat;
+	padding-left: 32px;
+}
+
+#search {
+    z-index:4000;
+	height: 30px;
+	background-color:#4D4D4D;
+}
+#searchpanel
+{
+    float:right;
+    background-color:#CBCBCB;
+    margin:16px 0 0;
+    padding:8px 8px 8px 9px;
+}
+#searchpanel .button
+{
+    float:left;
+}
+.Langlink
+{
+    margin-left:8px;
+}
+
+.search-box {
+	height: 24px;
+	width: 255px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	background-color:#FFFFFF;
+	padding:0;
+	border:none;
+	float:left;
+}
+.button
+{
+    border:medium none;
+    cursor:pointer;
+}
+.content
+{
+	width: 960px;
+	text-align:left;
+	margin:auto;
+}
+
+/*table*/
+.contentTable
+{
+    border:1px solid black;
+    background-color:#F9F9F9;
+}
+.contentTable th
+{
+    background-color:#4D4D4D;
+    border:2px solid #4D4D4D;
+}
+.contentTable td
+{
+     border-left:1px solid black;
+}
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+.tinymce
+{
+    width:100%;
+    height:500px;
+}
+.textEditPage
+{
+    width:500px;
+}
+.textAreaEditPage
+{
+    height:200px;
+    width:500px;
+}
+
+
+/***************************Menu*/
+/* Basic code - don't modify */
+ 
+ #nav { display: block; margin: 0; padding: 0; position: relative; }
+  #nav li { display: block; list-style: none; margin: 0; padding: 0; float: left; position: relative; }
+  #nav a { display: block; }
+  #nav ul { display: none; position: absolute; left: 0; margin: 0; padding: 0; }
+  * html #nav ul { line-height: 0; } /* IE6 "fix" */
+  	#nav ul a { zoom: 1; } /* IE6/7 fix */
+    #nav ul li { float: none; }
+    #nav ul ul { top: 0; }
+    
+/* Essentials - configure this */
+
+#nav ul { width: 130px; }
+#nav ul ul { left: 131px; }
+
+/* Everything else is theming */
+ 
+#nav { background-color: #30A8C3; height: 24px; }
+#nav *:hover { background-color: none; }
+#nav a { border-right: 1px solid white; color: white; font-size: 12px; padding: 6px; line-height: 1; }
+  #nav li.hover a { background-color: #5E5A5A; }
+  #nav ul { top: 25px; }
+    #nav ul li a { background-color: #5E5A5A; }
+      #nav ul a.hover { background-color: #30A8C3; }
+   #nav ul a { border-bottom: 1px solid white; border-right: none; opacity: 0.9; filter: alpha(opacity=90); }
+/* #nav ul a { border-bottom: none; } - I also needed this for IE6/7 */

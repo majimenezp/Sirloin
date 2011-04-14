@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="<%=ResolveClientUrl("~/Content/Site.css")%>" rel="stylesheet" type="text/css" />
+    <script src="<%=ResolveClientUrl("~/Scripts/jquery-1.4.4.min.js")%>" type="text/javascript"></script>
+    <script src="<%=ResolveClientUrl("~/Scripts/menu.js")%>" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</head>
+<body>
+    <div id="header">
+        <div class="content">
+            <div class="top">
+                <div class="logo">
+                    <a href="/">
+                        <img src="<%=ResolveClientUrl("~/Content/logo.png")%>" alt="company logo" /></a>
+                </div>
+                <div class="right">
+                      <% Html.RenderPartial("LogOnUserControl1"); %>
+                </div>
+            </div>
+            <div class="search">
+                <div id="searchpanel">
+                    <span>
+                        <input name="search" type="text" class="search-box" id="search2" />
+                        <input class="button" type="image" value="Search" src="<%=ResolveClientUrl("~/Content/searchButton.gif")%>" />
+                    </span><a href="english/pagina.html" class="Langlink">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="menu" class="content">
+            <div><%=Sirloin.Helpers.MenuHtmlHelper.MenuTree(Html, (IEnumerable<Sirloin.Domain.Menu>)ViewData["MenuData"])%></div>
+        </div>
+        <div id="middlebanner">
+        </div>
+        <div id="content" class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <div id="logo-footer">
+            </div>
+            <div id="menu-footer">
+            </div>
+            <div id="copyright">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
