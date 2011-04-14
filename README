@@ -1,1 +1,16 @@
-Sirloin mini CMS
+﻿Sirloin mini CMS
+
+Es un CMS que estoy haciendo para necesidades basicas en empresas o sitios web que solo requieren tener paginas y administrarlas por parte de un usuario.
+
+En la carpeta database viene un dos archivos sql, uno con la estructura de la base de datos y otra con datos de ejemplo.
+Para los datos de ejemplo, el usuario para editar es:
+usuario: admin
+password: admin
+
+TODO:
+*Terminar pantalla para administrar el menu de las paginas
+*Mejorar pantalla de editor en general
+*Crear interface de blogapi para poder editar desde windows live writer o editor compatible con blogapi
+*Mejorar seguridad
+*Terminar el dashboard de administración
+
